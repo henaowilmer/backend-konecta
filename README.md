@@ -23,6 +23,17 @@ cd backend-konecta
 docker-compose up --build
 ```
 La aplicación estará disponible en http://localhost:8080.
+
+## Pruebas
+La aplicación incluye pruebas automatizadas para asegurar la calidad del código y el correcto funcionamiento de las funcionalidades. Utilizamos Jest para realizar pruebas unitarias y de integración.
+
+Para la ejecución de pruebas unitarias:
+```
+npm test
+```
+Esto ejecutará todas las pruebas definidas en el proyecto y mostrará los resultados en la terminal.
+
+
 ### Ejecución de Seeds
 Automáticamente al levantar la imagen docker se sincronizan los modelos con la base de datos y se crean los usuarios admin@jsonapi.com con clave secret y employee@jsonapi.com también con clave secret.
 
@@ -37,6 +48,8 @@ Modularización: El código está dividido en módulos separados para cada funci
 Gestión de Errores: Todas las rutas y operaciones críticas están envueltas en bloques try-catch para capturar y manejar excepciones adecuadamente.
 
 Seeds: seeds permite mantener la base de datos en un estado consistente y facilita la adición de datos de prueba en diferentes entornos.
+
+Pruebas Automatizadas: Incluimos pruebas automatizadas para asegurar la calidad y el correcto funcionamiento de la aplicación.
 
 
 ## Seguridad
